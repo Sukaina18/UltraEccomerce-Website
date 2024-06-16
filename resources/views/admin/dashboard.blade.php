@@ -12,19 +12,12 @@
           <div class="container-fluid">
 
     @include('admin.body')
-    @include('admin.footer')
+
       </div>
     </div>
+</div>
 
 
-    <!-- JavaScript files-->
-    <script src="{{ asset('/adminstyle/vendor/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('/adminstyle/vendor/popper.js/umd/popper.min.js') }}"> </script>
-    <script src="{{ asset('/adminstyle/vendor/bootstrap/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('/adminstyle/vendor/jquery.cookie/jquery.cookie.js') }}"> </script>
-    <script src="{{ asset('/adminstyle/vendor/chart.js/Chart.min.js') }}"></script>
-    <script src="{{ asset('/adminstyle/vendor/jquery-validation/jquery.validate.min.js') }}"></script>
-    <script src="{{ asset('/adminstyle/js/charts-home.js') }}"></script>
-    <script src="{{ asset('/adminstyle/js/front.js') }}"></script>
+@include('admin.js')
   </body>
 </html>

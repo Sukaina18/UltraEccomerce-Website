@@ -10,7 +10,6 @@
     @include('home.billboard')
     @include('home.bestproducts')
     @include('home.flashproducts')
-    @include('home.viewproducts')
     @include('home.midbillboard')
     @include('home.instagram')
     @include('home.footer')

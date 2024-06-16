@@ -1,10 +1,11 @@
-<?php
+<?php // AuthenticatedSessionController.php
 
 namespace App\Http\Controllers\AdminAuth;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\AdminAuth\LoginRequest;
-use Illuminate\Foundation\Support\Providers\RouteServiceProvider;
+use App\Providers\RouteServiceProvider;  // Ensure this import is correct
+use Illuminate\Foundation\Support\Providers\RouteServiceProvider as IlluminateRouteServiceProvider;  // Ensure there are no naming conflicts
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -29,7 +30,7 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        return redirect()->intended(RouteServiceProvider::HOME);
+        return redirect()->intended(RouteServiceProvider::ADMINHOME);  // This should be correct
     }
 
     /**

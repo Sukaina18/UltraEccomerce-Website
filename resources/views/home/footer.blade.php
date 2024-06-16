@@ -154,9 +154,9 @@
         <div class="payment-method">
           <p>Payment options :</p>
           <div class="card-wrap">
-            <img src="images/visa-icon.jpg" alt="visa">
-            <img src="images/mastercard.png" alt="mastercard">
-            <img src="images/american-express.jpg" alt="american-express">
+            <img src="{{ asset('images/visa-icon.jpg') }}" alt="visa">
+            <img src="{{ asset('images/mastercard.png') }}" alt="mastercard">
+            <img src="{{ asset('images/american-express.jpg') }}" alt="american-express">
           </div>
         </div>
       </div>

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
 /*
 Theme Name: Ultras
 Theme URI: https://templatesjungle.com/
@@ -135,7 +138,6 @@ CSS STRUCTURE:
     --body-font           : "Inter", sans-serif;
     --heading-font        : "Inter", sans-serif;
 }
-
 
 /*----------------------------------------------*/
 /* 2 GENERAL TYPOGRAPHY */
@@ -1975,9 +1977,23 @@ blockquote cite {
 
 /*----- Featured Products Section
 --------------------------------------------------------------*/
+.productsrow{
+    display: flex;
+    gap: 50px;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
 .product-store .product-item {
     position: relative;
     margin-bottom: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 300px;
+
 }
 .product-item img.product-image {
     background: var(--light-color);
@@ -2006,6 +2022,18 @@ blockquote cite {
     bottom: 280px;
     opacity: 1;
 }
+
+.product-item a{
+    border-radius: 10px;
+    padding: .7rem;
+}
+
+.product-item .product-detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 i.icon.icon-arrow-io {
     font-size: 12px;
 }
@@ -2024,11 +2052,15 @@ i.icon.icon-arrow-io {
     padding-left: 25px;
 }
 .product-item h3.product-title {
-    font-size: 1.4em;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 1.3em;
     margin: 0;
 }
 .product-item .item-price {
-    font-size: 1.8em;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 1em;
 }
 .swiper.product-swiper {
     position: relative;
@@ -2895,4 +2927,33 @@ section.categories .category-content a{
     margin-left: 8px;
 }
 
+.imageholderview{
+    margin-bottom: 100px;
+}
 
+
+/* Custom styles for cart badge */
+/* .position-relative .cart-count {
+    top: -10px;
+    right: -10px;
+    font-size: 0.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+} */
+
+/* Custom styles for cart badge */
+.position-relative .cart-count {
+    top: -605px; /* Adjust as needed */
+    right: -10px; /* Adjust as needed */
+    color: #80a6de;
+}
+
+@media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+    }

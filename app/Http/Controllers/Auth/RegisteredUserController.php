@@ -23,18 +23,17 @@ class RegisteredUserController extends Controller
         return view('auth.register');
     }
 
-    /**
-     * Handle an incoming registration request.
-     *
-     * @throws \Illuminate\Validation\ValidationException
-     */
-    public function store(Request $request): RedirectResponse
+
+
+public function store(Request $request): RedirectResponse
     {
         $request->validate([
             'first_name' => ['required', 'string', 'max:15'],
             'last_name' => ['required', 'string', 'max:100'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
+            'phone' => ['required', 'string', 'max:15'], // Validate phone number
+            'address' => ['required', 'string', 'max:255'], // Validate address
         ]);
 
         $user = User::create([
@@ -42,12 +41,13 @@ class RegisteredUserController extends Controller
             'last_name' => $request->last_name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+            'phone' => $request->phone, // Assign phone number
+            'address' => $request->address, // Assign address
         ]);
 
         event(new Registered($user));
 
         Auth::login($user);
 
-        return redirect()->intended(RouteServiceProvider::HOME);
-    }
+        return redirect('/home');    }
 }

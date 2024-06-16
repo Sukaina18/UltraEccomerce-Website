@@ -1,1 +1,299 @@
 /* your styles go here */
+
+.cat_format[type ='text']
+{
+    width: 300px;
+    height: 40px;;
+}
+
+.cat_deg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+.cat_title{
+
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+.cat_table{
+    text-align: center;
+    margin: auto;
+    border: 2px solid rgb(184, 173, 173);
+    margin-top: 50px;
+    width: 400px;
+}
+.th_table{
+    background: rgb(143, 51, 35);
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.td_cat{
+    color: white;
+    padding: 10px;
+    border: 1px solid rgb(139, 55, 55);
+}
+
+.div_update{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.edit_format{
+    width: 3000px;
+    height: 40px;;
+}
+
+input[name="category"] {
+    width: 350px;
+    height: 40px;;
+}
+
+input.btn.btn-warning {
+    padding: 5px 10px;
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: bold !important;
+
+}
+/* Custom CSS for bold title headers, brown background, and white font color */
+.custom-thead {
+    font-weight: bold;
+    background-color: brown;
+    color: white;
+}
+
+/* Custom CSS for transparent background and white font color */
+.custom-table {
+    background-color: transparent !important;
+    color: white;
+}
+
+/* Custom CSS for table border color red */
+.custom-table-bordered {
+    border: 2px solid red;
+}
+
+/* Custom CSS for bold title headers */
+.custom-th {
+    font-weight: bold;
+    padding-top: 15px; /* Increase padding to make header rows bigger */
+    padding-bottom: 15px; /* Increase padding to make header rows bigger */
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+/* Custom CSS for centering input fields */
+.custom-input {
+    text-align: center;
+}
+
+/* Custom CSS for centering text in table cells */
+.custom-td {
+    text-align: center;
+}
+
+.all-products-caption {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center; /* Optional: Center the caption */
+    padding-top: 20px; /* Add some space above the caption */
+}
+
+.prod_title{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration-line:underline
+}
+
+.pagination-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination .page-item .page-link {
+    color: rgb(151, 19, 19); /* Page link color */
+    border: 1px solid rgb(1, 1, 1); /* Border color */
+}
+
+.pagination .page-item.active .page-link {
+    background-color: rgb(151, 19, 19); /* Active page background color */
+    border-color: rgb(151, 19, 19); /* Active page border color */
+}
+
+.pagination .page-item .page-link:hover {
+    background-color: rgb(151, 19, 19); /* Hover background color */
+    border-color: rgb(151, 19, 19); /* Hover border color */
+    color: white; /* Hover text color */
+}
+
+.upprod_title{
+    color: rgb(24, 24, 24);
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.update-prod-input,
+.update-prod-textarea,
+.update-prod-select,
+.update-prod-file-input {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #555;
+    width: 60%; /* Set the width to 70% */
+    margin-bottom: 10px;
+}
+
+.update-prod-textarea {
+    height: 150px;
+}
+
+.update-prod-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 30%; /* Optional: Make the button wider */
+    text-align: center;
+}
+
+.upprod_title1 {
+    margin-bottom: 20px;
+    margin-top: 15px;
+    color: #830e0e !important;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.update-prod-form {
+    margin-top: 20px;
+    background-color: transparent;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%; /* Center form and reduce width */
+}
+
+.update-prod-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.update-prod-label {
+    font-weight: bold;
+    color: #8d8a8a;
+    font-size: 16px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+form {
+    display: flex;
+}
+
+input[type="search"] {
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #a71f1f;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* customer.css */
+.customer tbody tr td {
+    color: white;
+}
+
+.customer thead {
+    text-align: center;
+    background-color: rgb(189, 17, 17);
+    font-weight: bold;
+}
+
+.customer tbody tr:nth-child(even) {
+    background-color: #343a40; /* Dark background for even rows */
+}
+
+.customer tbody tr:nth-child(odd) {
+    background-color: #454d55; /* Slightly lighter background for odd rows */
+}
+
+h2 {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.page-content {
+    background-color: #343a40;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+table{
+    border: 2px solid rgb(235, 135, 205);
+    text-align: center;
+}
+
+th{
+    background-color: skyblue;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.table_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+td{
+    color: #f0ecec;
+}
+
+.table thead th {
+    background-color: rgb(111, 10, 10);
+    color: white;
+}
+
